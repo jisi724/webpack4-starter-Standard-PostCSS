@@ -1,0 +1,9 @@
+body {
+  line-height: 2;
+}
+
+#app {
+  & .test {
+    color: red;
+  }
+}

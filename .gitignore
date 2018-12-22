@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+
+# Javascript
+node_modules/
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
