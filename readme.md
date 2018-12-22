@@ -1,16 +1,27 @@
-# Webpack 4 scaffold for general use.
+# Webpack 4 Starter for general use.
 
-A personal Webpack 4 scaffold to quickly start a general web development. 
+A neat Webpack 4 starter to quickly start a general web development with [Standard](https://standardjs.com/) and [PostCSS](https://postcss.org/)
 
-This scaffold provides most basic loaders: 
-- Babel to compile modern ES7 syntax.
-- HTML loader to export HTML.
-- PostCSS to compile CSS.
-- file loader to deal with assets.
-- webpack dev server to provide hot reload.
-- Standard to lint JS file.
+**What It Provides:**
+- Out-of-the-box dev and prodction environments
+- Enable the latest version of Javascript (ES6)
+- [Standard JS](https://standardjs.com/) for JS style guide, linter and formateter
+- [PostCSS](https://postcss.org/) transform CSS with Javascript and use tomorrow's CSS today!
 
 
+**Available Tasks**
+```bash
+# Run local dev environment with hot reload
+$ yarn dev
 
+# Build production files
+$ yarn build
 
-This project doesn't include any JS framework so feel free to add any framework loader on top of it, 
+# Run standard lint
+$ yarn lint
+
+# Run standard lint auto-fix
+$ yarn lintfix
+```
+
+*Feel free to add more loaders on top of this starter and enjoy coding!*
