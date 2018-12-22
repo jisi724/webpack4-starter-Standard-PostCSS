@@ -14,7 +14,7 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
-  mode: 'development',
+  mode: 'production',
   devtool: 'source-map',
   module: {
     rules: [
@@ -71,6 +71,17 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html'
-    })
-  ]
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    watchOptions: {
+      poll: true
+    },
+    historyApiFallback: true,
+    hot: true,
+    host: '0.0.0.0',
+    disableHostCheck: true,
+    port: 8088
+  }
 };
